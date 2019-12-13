@@ -1,1 +1,46 @@
-**hello**
+<html>
+<head>
+    <title class ="title">Mood Generator</title>
+    <link rel="stylesheet" href="fp.css">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src = "fp.js"></script>
+    <u><h1 class = "h1">Mood Generator</h1></u>
+    <p>Welcome to the Mood Generator. Basically depending on your mood, our collective team is going
+        to give you a song.</p>
+    <p>So just get started by choosing a mood</p>
+    <select id = "mySelect" name="Moods">
+            <option value = "Happy">Happy</option>
+            <option value = "Sad">Sad</option>
+            <option value = "Angry">Angry</option>
+            <option value = "Deep">Deep</option>
+            <option value = "Emotionless">Emotionless</option>
+            <option value = "Frustrated">Frustrated</option>
+            <option value = "Anxiety">Anxiety</option>
+            <option value = "Triumph">Triumph</option>
+            <option value = "Envy">Envy</option>
+            <option value = "Horror">Horror</option>
+            <option value = "Lustfull">Lustfull</option>
+    </select>
+    <audio id = "myHappy" control autoplay>
+        <source src="happy.mp3" type="audio/mpeg">
+    </audio>
+    <button id = "good">Play Audio</button>
+    <p id="demo"></p>
+    
+<!-- 
+    <script>
+        function myFunction(){
+            let x = document.getElementById("myHappy"); 
+            let y = document.getElementById("mySelect").value;
+            document.getElementById("demo").innerHTML = "You selected: " + y;
+            if (y === "Happy") {
+                function playHappy() { 
+                    x.play(); 
+                };
+            }
+        }
+    </script> -->
+</body>
+</html>
