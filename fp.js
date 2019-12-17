@@ -13,7 +13,7 @@ function ready(){
             myImg.onclick = function(){ // created an onclick for the image so everytime it is onclick the image will change
                 document.getElementById("myImg").src = "happy.gif";
         }
-        
+        document.body.style.backgroundColor = "#ffff99";
     }
         while (i < 1){
             i = i + 1
@@ -33,7 +33,7 @@ function ready(){
             }
                  }
             }
-             
+            
         };
     } // repeition from here to down there
 
@@ -50,6 +50,7 @@ function ready(){
         }
              
          };
+         document.body.style.backgroundColor = "#0000cc"; 
      }
 
      myAngry.onclick = function(){
@@ -64,6 +65,7 @@ function ready(){
        document.getElementById("myImg").src = "random.gif";
    }   
 }
+document.body.style.backgroundColor = "#801a00";
      }
 
      myDeep.onclick = function(){
@@ -78,6 +80,7 @@ function ready(){
        document.getElementById("myImg").src = "ben.gif";
    }   
 }
+document.body.style.backgroundColor = "#6600cc";
      }
      myLess.onclick = function(){
         var x = document.createElement("AUDIO");
@@ -91,6 +94,7 @@ function ready(){
        document.getElementById("myImg").src = "drake.gif";
    }   
 }
+document.body.style.backgroundColor = "#ffffff";
      }
 }
 
