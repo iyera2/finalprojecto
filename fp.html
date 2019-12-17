@@ -5,42 +5,30 @@
     <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src = "fp.js"></script>
+    <script src = "fp.js"></script> <!-- This refers to javascript -->
     <u><h1 class = "h1">Mood Generator</h1></u>
     <p>Welcome to the Mood Generator. Basically depending on your mood, our collective team is going
-        to give you a song.</p>
-    <p>So just get started by choosing a mood</p>
-    <select id = "mySelect" name="Moods">
+        to give you a song. </p>
+    <p>So just get started by choosing a mood. The option box below is too show you which genere of music.</p>
+    <form name="hello">  <!-- shows a list of values you can listen to -->
+        <select id = "mySelect" name="moods">
             <option value = "Happy">Happy</option>
             <option value = "Sad">Sad</option>
             <option value = "Angry">Angry</option>
             <option value = "Deep">Deep</option>
             <option value = "Emotionless">Emotionless</option>
-            <option value = "Frustrated">Frustrated</option>
-            <option value = "Anxiety">Anxiety</option>
-            <option value = "Triumph">Triumph</option>
-            <option value = "Envy">Envy</option>
-            <option value = "Horror">Horror</option>
-            <option value = "Lustfull">Lustfull</option>
-    </select>
-    <audio id = "myHappy" control autoplay>
-        <source src="happy.mp3" type="audio/mpeg">
-    </audio>
-    <button id = "good">Play Audio</button>
-    <p id="demo"></p>
-    
-<!-- 
-    <script>
-        function myFunction(){
-            let x = document.getElementById("myHappy"); 
-            let y = document.getElementById("mySelect").value;
-            document.getElementById("demo").innerHTML = "You selected: " + y;
-            if (y === "Happy") {
-                function playHappy() { 
-                    x.play(); 
-                };
-            }
-        }
-    </script> -->
+        </select>
+    </form>
+    <p>The first button option is if you are in a happy mood.  Click Play Happy Audio.</p>
+    <button id = "myGood">Play Happy Audio</button>
+    <p>This next button is a sad mood. Click Play Sad Audio. It will play a sad song.</p>
+    <button id = "mySad">Play Sad Audio</button>
+    <img id="myImg" src="welcome.gif" width="300" height="150">
+    <p>The next one is Angry. Don't get angry over angry songs.</p>
+    <button id = "myAngry">Play Angry Audio</button>
+    <p>Get ready get set. The next mood is deep. Enjoy!</p>
+    <button id = "myDeep">Play Deep Audio</button>
+    <p>Your favortive mood songs are only by iyera2. This next one is Emotionless.</p>
+    <button id = "myLess">Play Less Audio</button>
 </body>
 </html>
